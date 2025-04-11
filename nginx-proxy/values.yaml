@@ -1,0 +1,15 @@
+nginx:
+  name: nginx-proxy
+  labels:
+    id: c0929252
+    app: nginx-proxy
+    env: dev
+  image:
+    repository: solidblack99/nginxedit
+    tag: "latest"
+    pullPolicy: IfNotPresent
+  replicas: 1
+  service:
+    type: NodePort
+    port: 80
+    targetPort: 80  
