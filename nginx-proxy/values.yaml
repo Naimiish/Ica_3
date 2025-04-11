@@ -10,6 +10,6 @@ nginx:
     pullPolicy: IfNotPresent
   replicas: 1
   service:
-    type: LoadBalancer
+    type: NordPort
     port: 80
     targetPort: 80  
